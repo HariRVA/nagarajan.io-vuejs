@@ -21,13 +21,13 @@ export default {
     return {
       posts: [{
           title: 'I am cool af',
-          previewText: 'I got a cat!',
+          previewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...',
           thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1200px-Cat03.jpg',
           id: '0'
         },
         {
-          title: 'I am cool af',
-          previewText: 'I got a another cat!',
+          title: 'May is bae',
+          previewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...',
           thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1200px-Cat03.jpg',
           id: '1'
         }
@@ -37,13 +37,8 @@ export default {
 </script>
 
 <style>
-  .container{
-    margin-top: 4.5rem;
-  }
-
 
   #projects{
-    padding-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,7 +47,7 @@ export default {
 
   @media (min-width: 35rem){
     #projects{
-      flex-direction: row;
+      flex-direction: column;
     }
   }
 </style>

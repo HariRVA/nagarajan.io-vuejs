@@ -13,8 +13,11 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "add": "^2.0.6",
     "ajv": "^6.5.3",
-    "nuxt": "^1.0.0"
+    "nuxt": "^1.0.0",
+    "vue-fixed-header": "^1.0.4",
+    "yarn": "^1.9.4"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
