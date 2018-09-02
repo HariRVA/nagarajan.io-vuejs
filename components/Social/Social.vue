@@ -2,11 +2,11 @@
   <div id="socialLinks">
     <nav class = "main-nav">
       <ul class = "nav-links">
-        <nuxt-link tag="li" to="#Top" class="nav-link"><a><img src="~/assets/icons/facebook.png"></a></nuxt-link>
-        <nuxt-link tag="li" to="#Top" class="nav-link"><a><img src="~/assets/icons/instagram.png"></a></nuxt-link>
-        <nuxt-link tag="li" to="#Top" class="nav-link"><a><img src="~/assets/icons/linkedin.png"></a></nuxt-link>
-        <nuxt-link tag="li" to="#Top" class="nav-link"><a><img src="~/assets/icons/twitter.png"></a></nuxt-link>
-        <nuxt-link tag="li" to="#Top" class="nav-link"><a><img src="~/assets/icons/youtube.png"></a></nuxt-link>
+        <li class="nav-link"><a href="https://www.facebook.com/HariNagarajanRVA?" target="_blank"><img src="~/assets/icons/facebook.png"></a></li>
+        <li class="nav-link"><a href="https://www.instagram.com/underacorktree/" target="_blank"><img src="~/assets/icons/instagram.png"></a></li>
+        <li class="nav-link"><a href="https://www.linkedin.com/in/harinagarajan92" target="_blank"><img src="~/assets/icons/linkedin.png"></a></li>
+        <li class="nav-link"><a href="https://twitter.com/HariRVA" target="_blank"><img src="~/assets/icons/twitter.png"></a></li>
+        <li class="nav-link"><a><img src="~/assets/icons/youtube.png"></a></li>
 
       </ul>
     </nav>
@@ -20,13 +20,12 @@
     top: 0;
     left: 0;
     width: 100%;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-    height: 10rem;
+    margin-top: -115px;
+    height: 105px;
   }
 
   .main-nav {
-    height: 3rem;
+    height: 105px;
   }
 
   .nav-links{
@@ -70,10 +69,11 @@
     }
 
     #socialLinks{
-      height: 3rem;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      padding-bottom: 1.5rem;
+      height: 60px;
+      margin-top: -65px;
+    }
+    .main-nav {
+      height: 55px;
     }
 
 

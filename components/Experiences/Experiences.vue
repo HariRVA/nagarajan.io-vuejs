@@ -54,7 +54,8 @@
 
   .post-preview {
     width: 80%;
-    height: 15rem;
+    max-width: 40rem;
+    min-height: 15rem;
     margin: 1rem;
     display: flex;
     flex-direction: row;
@@ -124,7 +125,7 @@
 
   @media (max-width: 440px) {
     .post-preview {
-      height: 20rem;
+      min-height: 20rem;
       flex-direction: column;
       justify-content: center;
       align-items: center;

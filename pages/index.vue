@@ -3,11 +3,6 @@
     <TheTop />
 
     <section id="social">
-      <div class="sectionTitle">
-        <h1>
-          Where you can find me
-        </h1>
-      </div>
       <Social/>
     </section>
 
@@ -31,11 +26,13 @@
     <section id="photos">
       <div class="sectionTitle">
         <h1>
-          The memories I've captured
+          Some cool photos
         </h1>
       </div>
       <p>
-        I love taking photos. I mainly use my Pixel 2 as my camera.
+        The best camera is the one you have with you. I'm a huge fan of mobile photography and I take tons of pictures. Right now my
+        phone camera of choice is the Google Pixel 2. Some other phones I've used here are: iPhone 8+, Samsung Galaxy S9, Essential PH-1 and
+        Google Pixel. My favorite subjects include beautiful Richmond landscapes, my girlfriend May, cats, and my family and friends.
       </p>
       <div id="gallery">
       <Photos/>
@@ -65,30 +62,37 @@
       posts: [{
         CompanyName: 'Capital One',
         JobTitle: 'Software Engineer',
-          previewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...',
+          previewText: 'Capital One is a bancorp that is also tech company. They are constantly trying to be disruptive by bringing modern technologies to the banking industry ' +
+          ' and defining new user experiences. Right now, I\'m working on what many software engineers would consider an ideal project. Engineering solutions ' +
+          'to be used by other software engineers.',
           thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Capital_One_logo.svg/2000px-Capital_One_logo.svg.png',
           id: '0'
         },
         {
           CompanyName: 'Virginia Department of Transportation',
           JobTitle: 'Business Intelligence Analyst',
-          previewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...',
-          thumbnailUrl: 'http://www.timesnews.net/image/2018/06/05/x700_q30/vdotlogo-jpg-1.jpg',
+          previewText: 'My role here was half technical and half business. I created all sorts of metrics aggregation, distribution and dashboarding solutions. ' +
+          'However, where I was really able to shine was finding new ways to turn bland data into information that could be used to drive business and policy decisions.',
+          thumbnailUrl: 'https://www.timesnews.net/image/2018/06/05/x700_q30/vdotlogo-jpg-1.jpg',
           id: '1'
         },
         {
           CompanyName: 'CoStar Group',
           JobTitle: 'Data Quality Analyst',
-          previewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...',
+          previewText: 'CoStar is THE real estate data company, this company\'s data powers the majority of all commercial real estate transactions in the country. ' +
+          'This is where I learned how very simple processes and programs can make huge business and financial impacts on an organization.',
           thumbnailUrl: 'https://g.foolcdn.com/art/companylogos/medium/CSGP.png',
-          id: '1'
+          id: '2'
         },
         {
           CompanyName: 'United States Marine Corps',
           JobTitle: 'Supply Admin',
-          previewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...',
+          previewText: 'I joined the Marine Corps at 17 years old. It was one of the best decisions I\'ve ever made. My programming and technical skills come from a ' +
+          'variety of places. But the Marine Corps is where I learned how to commit to something from start to finish, how to ' +
+          'take a group of individuals with different goals and talents and put them together into a team with a singular mission, and how to take a high level strategic vision ' +
+          'and turn it into an actionable plan.',
           thumbnailUrl: 'https://www.hqmc.marines.mil/portals/134/Mixed%20Media/EGA%202.jpg',
-          id: '1'
+          id: '3'
         }
       ]};
   }
@@ -127,7 +131,6 @@
   }
 
   #social{
-    background-color: lightgrey;
   }
 
   #photos h1{
@@ -141,9 +144,11 @@
   #photos p{
     margin-left: 1rem;
     margin-right: 1rem;
+    max-width: 40rem;
   }
   #gallery{
     width: 100%;
+    max-width: 60rem;
   }
 
   .sectionTitle{
