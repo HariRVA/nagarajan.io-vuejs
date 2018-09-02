@@ -9,7 +9,7 @@
     <section id="projects">
       <div class="sectionTitle">
         <h1>
-          Where I've been so far
+          What am I doing
         </h1>
       </div>
       <Experiences

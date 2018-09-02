@@ -45,6 +45,9 @@
     padding: 0.1rem auto;
   }
 
+  .nav-link img{
+    filter: invert(100%);
+  }
   .nav-link a{
     display: block;
     text-decoration: none;
@@ -70,7 +73,7 @@
 
     #socialLinks{
       height: 60px;
-      margin-top: -65px;
+      margin-top: -110px;
     }
     .main-nav {
       height: 55px;
