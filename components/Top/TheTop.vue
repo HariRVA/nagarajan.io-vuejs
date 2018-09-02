@@ -66,7 +66,7 @@
 
   @media (max-width: 440px){
     .titles{
-      font-size: 16px;
+      font-size: 24px;
       line-height: 1.5em;
       font-weight: 600;
       color: white;
@@ -79,6 +79,11 @@
       display: flex;
       box-sizing: border-box;
       padding: 7em 0em 19em 2.5em;
+    }
+
+    .photo {
+      background-image: url("/bridgeMini.jpg");
+      background-position: 80%;
     }
   }
 </style>

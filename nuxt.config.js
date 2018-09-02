@@ -6,12 +6,17 @@ module.exports = {
     title: 'Hari\'s Website',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1' },
       { hid: 'description', name: 'description', content: 'Hari\'s Personal Website!' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,700'}
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,700'},
+      { rel: 'stylesheet', type: 'text/css', href: 'https://unpkg.com/nanogallery2/dist/css/nanogallery2.min.css'}
+      ],
+    script: [
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'},
+      { src: 'https://unpkg.com/nanogallery2/dist/jquery.nanogallery2.min.js'}
     ]
   },
   /*

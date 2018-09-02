@@ -1,23 +1,13 @@
 <template>
-  <div>
-    <TheTop />
-    <TheHeader />
-    <main class="main-content">
-      <nuxt/>
+    <main>
+      <div id="main">
+        <nuxt/>
+      </div>
     </main>
-  </div>
 </template>
 
 <script>
-  import TheHeader from '@/components/TheHeader/TheHeader'
-  import TheTop from '@/components/Top/TheTop'
 
-  export default {
-    components: {
-      TheHeader,
-      TheTop
-    }
-  }
 </script>
 
 <style>
@@ -37,9 +27,12 @@
     width: 100%;
   }
 
-  .main-content{
-    position: relative;
+  #main{
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    display: block;
   }
-
 </style>
 
