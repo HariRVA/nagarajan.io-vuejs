@@ -22,8 +22,8 @@
 
 <style>
   .photo {
-    background-image: url("/bridge.jpg");
-    height: calc(100vh + 53px);
+    background-image: url("~/assets/images/bridge.jpg");
+    height: calc(100vh);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -82,7 +82,7 @@
     }
 
     .photo {
-      background-image: url("/bridgeMini.jpg");
+      background-image: url("~/assets/images/bridgeMini.jpg");
       background-position: 80%;
     }
   }
