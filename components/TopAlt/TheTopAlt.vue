@@ -24,7 +24,6 @@
 
 <style>
   .topMain {
-    background-color: #293363;
     height: calc(100vh);
     top: 0;
     left: 0;
@@ -32,6 +31,8 @@
     align-content: center;
     justify-items: center;
     display: flex;
+    flex-direction: column;
+    background-color: rgba(2,136,209,.2);
   }
 
   .intro {
@@ -42,6 +43,7 @@
     display: block;
     align-content: center;
     align-items: center;
+    width: 80%;
   }
 
   .introRow{
@@ -165,11 +167,16 @@
     }
 
     .intro{
+      padding-top: 5vh!important;
       padding-bottom: 5vh!important;
+      margin-top: 0vh;
+      margin-bottom: 10vh;
+      padding-bottom: 5vh!important;
+      width: 100%;
     }
 
     .introRow{
-      padding: 0em 2em 0em 0em;
+      padding: 0em 0em 0em 0em;
       flex-direction: column-reverse;
       align-items: center;
     }

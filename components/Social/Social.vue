@@ -18,12 +18,12 @@
   #socialLinks {
     position: fixed;
     left: 0;
-    top: 0;
+    bottom: 5vh;
     z-index: 5;
+    display: block;
   }
 
   .main-nav {
-    height: 105px;
   }
 
   .nav-links{
@@ -38,17 +38,16 @@
 
   .nav-link {
     display: list-item;
-    justify-content: center;
-    align-items: center;
     margin: 0 1rem;
     padding: 0.1rem auto;
   }
 
+
   .nav-link img{
     filter: invert(100%);
+    width: 32px;
   }
   .nav-link a{
-    display: block;
     text-decoration: none;
     color: #06c4d1;
   }

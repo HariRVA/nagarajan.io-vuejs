@@ -95,8 +95,7 @@
       Experiences: [{
         CompanyName: 'Capital One',
         JobTitle: 'Software Engineer',
-          previewText: 'Capital One is a bancorp that is also tech company. They are constantly trying to be disruptive by bringing modern technologies to the banking industry ' +
-          ' and defining new user experiences. Right now, I\'m working on what many software engineers would consider an ideal project. Engineering solutions ' +
+          previewText: 'Capital One is a technology focused bancorp. Right now, I\'m working on what many software engineers would consider an ideal project. Engineering solutions ' +
           'to be used by other software engineers.',
           thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Capital_One_logo.svg/2000px-Capital_One_logo.svg.png',
           id: '0'
@@ -113,13 +112,13 @@
           CompanyName: 'CoStar Group',
           JobTitle: 'Data Quality Analyst',
           previewText: 'CoStar is THE real estate data company, this company\'s data powers the majority of all commercial real estate transactions in the country. ' +
-          'This is where I learned how very simple processes and programs can make huge business and financial impacts on an organization.',
+          'I built an automation platform that maintained nearly a third of the tenant database. ',
           thumbnailUrl: 'https://g.foolcdn.com/art/companylogos/medium/CSGP.png',
           id: '2'
         },
         {
           CompanyName: 'United States Marine Corps',
-          JobTitle: 'Supply Admin',
+          JobTitle: 'Supply Administration and Operations Specialist',
           previewText: 'I joined the Marine Corps at 17 years old. It was one of the best decisions I\'ve ever made. My programming and technical skills come from a ' +
           'variety of places. But the Marine Corps is where I learned how to commit to something from start to finish, how to ' +
           'take a group of individuals with different goals and talents and put them together into a team with a singular mission, and how to take a high level strategic vision ' +
@@ -144,6 +143,11 @@
     width: 100%;
     top: 0;
     left: 0;
+    background-image: url("~/assets/images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
   }
 
   section{
@@ -152,13 +156,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
   }
 
 
   #posts{
-    background-color: lightgrey;
     padding-bottom: 2rem;
+    background-color: rgba(0,91,159, .4);
+    display: flex;
   }
 
   #postContent{
@@ -171,11 +175,11 @@
     max-width: 45rem;
   }
   #projects{
+    background-color: rgba(0,91,159, 0.5);
   }
 
   #photos{
-    margin-top: 3rem;
-    background-color: lightgrey;
+    background-color: rgba(0,91,159, 0.6);
   }
 
   #social{
@@ -206,7 +210,7 @@
 
   .sectionTitle{
 
-    border-bottom-color: rgb(51, 51, 51);
+    border-bottom-color: white;
     border-bottom-style: solid;
     margin-top: 3rem;
   }
@@ -214,6 +218,7 @@
     font-weight: 700;
     font-size: 36px;
     margin: 0;
+    color: white;
   }
 
   @media (max-width: 440px){

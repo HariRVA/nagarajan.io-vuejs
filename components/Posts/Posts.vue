@@ -86,16 +86,16 @@
     text-decoration: none;
     font-weight: 600;
     font-size: 24px;
-    color: blueviolet;
+    color: whitesmoke;
     text-align: left;
-
   }
 
   .excerpt {
+    color: honeydew;
 
   }
   .excerpt p, a{
-    color: black;
+    color: honeydew;
     margin-bottom: 0;
   }
 
