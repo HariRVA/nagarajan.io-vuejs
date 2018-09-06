@@ -1,9 +1,30 @@
 <template>
   <div id="container">
-    <TheTop />
+    <TheTopAlt />
 
     <section id="social">
       <Social/>
+    </section>
+
+
+    <section id="posts">
+      <div class="sectionTitle">
+        <h1>
+          My latest thoughts
+        </h1>
+      </div>
+      <div id="postContent">
+        <posts
+          v-for="Post in Posts"
+          :key="Post.ID"
+          :title="Post.title"
+          :excerpt="Post.excerpt"
+          :link="Post.link"
+          :thumb="Post.thumb"
+        />
+      </div>
+
+
     </section>
 
     <section id="projects">
@@ -13,13 +34,13 @@
         </h1>
       </div>
       <Experiences
-        v-for="post in posts"
-        :key="post.id"
-        :CompanyName="post.CompanyName"
-        :JobTitle="post.JobTitle"
-        :previewText="post.previewText"
-        :thumbnailUrl="post.thumbnailUrl"
-        :id="post.id"
+        v-for="Experience in Experiences"
+        :key="Experience.id"
+        :CompanyName="Experience.CompanyName"
+        :JobTitle="Experience.JobTitle"
+        :previewText="Experience.previewText"
+        :thumbnailUrl="Experience.thumbnailUrl"
+        :id="Experience.id"
       />
     </section>
 
@@ -32,13 +53,16 @@
       <p>
         The best camera is the one you have with you. I'm a huge fan of mobile photography and I take tons of pictures. Right now my
         phone camera of choice is the Google Pixel 2. Some other phones I've used here are: iPhone 8+, Samsung Galaxy S9, Essential PH-1 and
-        Google Pixel. My favorite subjects include beautiful Richmond landscapes, my girlfriend May, cats, and my family and friends.
+        Google Pixel. My favorite subjects include beautiful Richmond landscapes, food, cats, and my family and friends.
       </p>
       <div id="gallery">
       <Photos/>
       </div>
     </section>
 
+    <section id="footer">
+      <Copyright />
+    </section>
 
   </div>
 </template>
@@ -46,20 +70,29 @@
 <script>
   import Experiences from "@/components/Experiences/Experiences";
   import Photos from "@/components/Photos/Photos";
-  import TheTop from '@/components/Top/TheTop'
+  import TheTopAlt from '@/components/TopAlt/TheTopAlt'
   import Social from '@/components/Social/Social'
-
+  import Copyright from '@/components/Copyright/Copyright'
+  import Posts from '@/components/Posts/Posts'
   export default {
   components:{
     Experiences,
     Photos,
-    TheTop,
-    Social
+    TheTopAlt,
+    Social,
+    Copyright,
+    Posts
 
   },
+    async asyncData({ app }) {
+      const Posts = await app.$axios.$get('https://iuedqpqpla.execute-api.us-east-1.amazonaws.com/default/getBlogPots');
+
+      return { Posts }
+    },
+
   data() {
     return {
-      posts: [{
+      Experiences: [{
         CompanyName: 'Capital One',
         JobTitle: 'Software Engineer',
           previewText: 'Capital One is a bancorp that is also tech company. They are constantly trying to be disruptive by bringing modern technologies to the banking industry ' +
@@ -93,8 +126,9 @@
           'and turn it into an actionable plan.',
           thumbnailUrl: 'https://www.hqmc.marines.mil/portals/134/Mixed%20Media/EGA%202.jpg',
           id: '3'
-        }
-      ]};
+        }]
+
+    };
   }
 };
 </script>
@@ -122,6 +156,20 @@
   }
 
 
+  #posts{
+    background-color: lightgrey;
+    padding-bottom: 2rem;
+  }
+
+  #postContent{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    max-width: 45rem;
+  }
   #projects{
   }
 
@@ -135,6 +183,11 @@
 
   #photos h1{
 
+  }
+
+  #footer{
+    background-color: darkblue;
+    color: ghostwhite;
   }
 
   #projects h1{
@@ -169,6 +222,10 @@
     }
     .sectionTitle h1{
       font-size: 24px;
+    }
+
+    #postContent{
+      flex-direction: column;
     }
   }
 </style>

@@ -17,7 +17,7 @@
         "galleryDisplayMoreStep": 2,
         "galleryPaginationMode": "dots",
         "thumbnailAlignment": "center",
-        "galleryMaxItems": 50,
+        "galleryMaxItems": 70,
         "thumbnailGutterWidth": 0,
         "thumbnailGutterHeight": 0,
         "displayBreadcrumb": false,

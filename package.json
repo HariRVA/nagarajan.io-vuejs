@@ -13,6 +13,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.3.1",
     "add": "^2.0.6",
     "ajv": "^6.5.3",
     "nanogallery2": "^2.2.0",

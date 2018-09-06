@@ -1,4 +1,9 @@
+
 module.exports = {
+  modules: [
+    '@nuxtjs/axios'
+  ],
+
   /*
   ** Headers of the page
   */

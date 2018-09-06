@@ -16,12 +16,10 @@
 <style>
 
   #socialLinks {
-    position: relative;
-    top: 0;
+    position: fixed;
     left: 0;
-    width: 100%;
-    margin-top: -115px;
-    height: 105px;
+    top: 0;
+    z-index: 5;
   }
 
   .main-nav {
@@ -34,11 +32,12 @@
     padding: 0;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
   }
 
   .nav-link {
-    display: flex;
+    display: list-item;
     justify-content: center;
     align-items: center;
     margin: 0 1rem;
