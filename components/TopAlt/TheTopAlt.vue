@@ -8,14 +8,18 @@
             </h1>
           <h2>I craft software solutions for business problems.</h2>
           <p>
-            I'm a Software Engineer in Richmond, VA. My passions include serverless cloud architecture and data analysis.
+            I'm a Software Engineer from Richmond, VA. As of 2016, I've been programing for 50% of my life. My non programing
+            hobbies include electric skateboarding, cooking, video games, and mobile photography. Some of my lofty personal goals
+            are to build a DIY electric skateboard with a full data collection and analysis architecture, setting up a natural
+            language processor to screen my emails and text messages and to automate as many mundane household tasks as possible
+            using NFC tags. My current professional focus is on server-less cloud architecture and the JAMStack.
 
           </p>
 
         </div>
 
         <div class="photoCol">
-          <img src="~/assets/images/bridgePhoto.png">
+          <img src="~/assets/images/bridgePhoto.jpg">
         </div>
       </div>
     </div>
@@ -24,7 +28,7 @@
 
 <style>
   .topMain {
-    height: calc(100vh);
+    min-height: calc(100vh);
     top: 0;
     left: 0;
     align-items: center;
@@ -36,7 +40,7 @@
   }
 
   .intro {
-    padding-top: 20vh!important;
+    padding-top: 10vh!important;
     padding-bottom: 20vh!important;
     margin-top: 10vh;
     margin-bottom: 10vh;
@@ -112,10 +116,10 @@
     -webkit-transform: rotate(15deg);
     -ms-transform: rotate(15deg);
     transform: rotate(15deg);
-    background-image: url("~/assets/images/bridgePhoto.png");
+    background-image: url("~/assets/images/bridgePhoto.jpg");
     background-size: cover;
     border: 4px double #E77470;
-    opacity: 0.2;
+    opacity: 0.4;
   }
 
   .photoCol:after{
@@ -130,10 +134,10 @@
     -webkit-transform: rotate(-3deg);
     -ms-transform: rotate(-3deg);
     transform: rotate(-3deg);
-    background-image: url("~/assets/images/bridgePhoto.png");
+    background-image: url("~/assets/images/bridgePhoto.jpg");
     border: 4px double #E77470;
     background-size: cover;
-    opacity: 0.2;
+    opacity: 0.4;
   }
 
   .photoCol img{
@@ -159,7 +163,7 @@
   @media (max-width: 440px){
     .titles{
       font-size: 24px;
-      line-height: 1.5em;
+      line-height: 1.0em;
       font-weight: 600;
       color: white;
       letter-spacing: 1px;
@@ -175,10 +179,15 @@
       width: 100%;
     }
 
+    .introCol{
+      max-width: 90%;
+    }
     .introRow{
       padding: 0em 0em 0em 0em;
       flex-direction: column-reverse;
       align-items: center;
+      max-width: 100%;
+
     }
     .photoCol{
       max-width: 50%;
@@ -188,10 +197,5 @@
     .photoCol img{
     }
 
-
-
-    .topMain {
-      background-color: #293363;
-    }
   }
 </style>

@@ -30,17 +30,17 @@
     <section id="projects">
       <div class="sectionTitle">
         <h1>
-          What am I doing
+          My Work Profile
         </h1>
       </div>
       <Experiences
-        v-for="Experience in Experiences"
-        :key="Experience.id"
-        :CompanyName="Experience.CompanyName"
-        :JobTitle="Experience.JobTitle"
-        :previewText="Experience.previewText"
-        :thumbnailUrl="Experience.thumbnailUrl"
-        :id="Experience.id"
+        v-for="job in Experience"
+        :key="job.id"
+        :CompanyName="job.Company"
+        :JobTitle="job.JobTitle"
+        :previewText="job.About"
+        :thumbnailUrl="job.thumbnailUrl"
+        :id="job.id"
       />
     </section>
 
@@ -86,47 +86,14 @@
   },
     async asyncData({ app }) {
       const Posts = await app.$axios.$get('https://iuedqpqpla.execute-api.us-east-1.amazonaws.com/default/getBlogPots');
+      const Experience = await app.$axios.$get('https://bykv699qcf.execute-api.us-east-1.amazonaws.com/default/get_experience');
 
-      return { Posts }
+
+      return { Posts,Experience }
     },
 
   data() {
     return {
-      Experiences: [{
-        CompanyName: 'Capital One',
-        JobTitle: 'Software Engineer',
-          previewText: 'Capital One is a technology focused bancorp. Right now, I\'m working on what many software engineers would consider an ideal project. Engineering solutions ' +
-          'to be used by other software engineers.',
-          thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Capital_One_logo.svg/2000px-Capital_One_logo.svg.png',
-          id: '0'
-        },
-        {
-          CompanyName: 'Virginia Department of Transportation',
-          JobTitle: 'Business Intelligence Analyst',
-          previewText: 'My role here was half technical and half business. I created all sorts of metrics aggregation, distribution and dashboarding solutions. ' +
-          'However, where I was really able to shine was finding new ways to turn bland data into information that could be used to drive business and policy decisions.',
-          thumbnailUrl: 'https://www.timesnews.net/image/2018/06/05/x700_q30/vdotlogo-jpg-1.jpg',
-          id: '1'
-        },
-        {
-          CompanyName: 'CoStar Group',
-          JobTitle: 'Data Quality Analyst',
-          previewText: 'CoStar is THE real estate data company, this company\'s data powers the majority of all commercial real estate transactions in the country. ' +
-          'I built an automation platform that maintained nearly a third of the tenant database. ',
-          thumbnailUrl: 'https://g.foolcdn.com/art/companylogos/medium/CSGP.png',
-          id: '2'
-        },
-        {
-          CompanyName: 'United States Marine Corps',
-          JobTitle: 'Supply Administration and Operations Specialist',
-          previewText: 'I joined the Marine Corps at 17 years old. It was one of the best decisions I\'ve ever made. My programming and technical skills come from a ' +
-          'variety of places. But the Marine Corps is where I learned how to commit to something from start to finish, how to ' +
-          'take a group of individuals with different goals and talents and put them together into a team with a singular mission, and how to take a high level strategic vision ' +
-          'and turn it into an actionable plan.',
-          thumbnailUrl: 'https://www.hqmc.marines.mil/portals/134/Mixed%20Media/EGA%202.jpg',
-          id: '3'
-        }]
-
     };
   }
 };
@@ -185,23 +152,18 @@
   #social{
   }
 
-  #photos h1{
 
-  }
 
   #footer{
     background-color: darkblue;
     color: ghostwhite;
   }
 
-  #projects h1{
-    color: rgb(51, 51, 51);
-  }
-
   #photos p{
     margin-left: 1rem;
     margin-right: 1rem;
     max-width: 40rem;
+    color: honeydew;
   }
   #gallery{
     width: 100%;
@@ -227,6 +189,12 @@
     }
     .sectionTitle h1{
       font-size: 24px;
+    }
+
+    #photos p{
+      max-width: 95%;
+      margin-left: 10vw;
+      margin-right: 10vw;
     }
 
     #postContent{

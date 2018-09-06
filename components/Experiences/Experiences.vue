@@ -36,8 +36,8 @@
         required: true
       },
       id: {
-        type: String,
-        required: true
+        type: Number,
+        required: false
       }
 
     }
@@ -71,13 +71,13 @@
     margin-left: 1rem;
     margin-right: 1rem;
     margin-top: 1rem;
-
     box-shadow: 1px 1px 5px 1px rgba(0,0,0,5);
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 20%;
+    background-color: white;
 
   }
 
@@ -100,7 +100,7 @@
     font-size: 24px;
     font-weight: 400;
     width: 100%;
-    color: blueviolet;
+    color: whitesmoke;
     text-align: left;
     margin: 0px;
     margin-bottom: 5px;
@@ -109,14 +109,14 @@
     font-size: 15px;
     font-weight: 700;
     width: 100%;
-    color: crimson;
+    color: red;
     text-align: left;
     margin: 0px;
     margin-bottom: 5px;
   }
 
   .post-preview-content p {
-    color: black;
+    color: honeydew;
     margin: 0;
     margin-top: 10px;
     font-weight: 400;
@@ -144,6 +144,7 @@
     .post-preview-content{
       margin-left: 0rem;
       margin-top: 0.5rem;
+      max-width: 95%;
     }
 
   }
