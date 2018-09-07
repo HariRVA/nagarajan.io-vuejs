@@ -102,6 +102,7 @@
 <style scoped>
 
 
+
   #container {
     position: absolute;
     align-items: center;
@@ -110,10 +111,7 @@
     width: 100%;
     top: 0;
     left: 0;
-    background-image: url("~/assets/images/bg.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+
 
   }
 

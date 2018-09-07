@@ -25,6 +25,10 @@
   body {
     margin: 0;
     width: 100%;
+    background-image: url("~/assets/images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
   }
 
   #main{

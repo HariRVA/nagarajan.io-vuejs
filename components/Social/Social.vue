@@ -69,7 +69,7 @@
       display: block;
       position: fixed;
       top: 25px;
-      right: 25px;
+      right: 33vw;
       left: unset;
       bottom: unset;
       z-index: 1;
@@ -84,8 +84,8 @@
       width: 40px;
       height: 32px;
       position: absolute;
-      top: -7px;
-      left: -3px;
+      top: -10px;
+      left: 25vw;
 
       cursor: pointer;
 
@@ -96,6 +96,7 @@
     }
 
     .main-nav {
+
     }
 
 
@@ -104,7 +105,6 @@
     }
 
     .nav-link{
-      margin-left: 0.5em;
     }
     #socialLinks span
     {
@@ -113,7 +113,8 @@
       height: 4px;
       margin-bottom: 5px;
       position: relative;
-
+      top: 0px;
+      left: 28vw;
       background: #cdcdcd;
       border-radius: 3px;
 
@@ -160,14 +161,15 @@
     .nav-links
     {
       background-color: rgba(0,92,159,0.7);
-      height: 100vh;
+      height: 120vh;
+      width: 200px;
+      top: -100px;
       position: absolute;
       list-style-type: none;
       -webkit-font-smoothing: antialiased;
-      /* to stop flickering of text in safari */
-
+      align-items: left;
       transform-origin: 0% 0%;
-      transform: translate(100%, 0);
+      transform: translate(150%, 0);
 
       transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     }

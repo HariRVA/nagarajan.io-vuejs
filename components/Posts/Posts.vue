@@ -4,7 +4,9 @@
     <div class="post">
       <div class="title">
         <a :href="link">
-          {{title}}
+
+          <span v-html="title">
+        </span>
         </a>
       </div>
       <div class="excerpt">
