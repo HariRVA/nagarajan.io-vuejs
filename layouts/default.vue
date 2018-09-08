@@ -20,15 +20,23 @@
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     box-sizing: border-box;
+    height: 100%;
+    min-height: 100%;
 }
 
   body {
     margin: 0;
     width: 100%;
+    height: 100%;
+    min-height: 100%;
     background-image: url("~/assets/images/bg.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
   }
 
   #main{
