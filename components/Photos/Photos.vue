@@ -14,7 +14,7 @@
         "thumbnailHoverEffect2": "image_grayscale_100%_0%_400",
         "galleryDisplayMode": "moreButton",
         "galleryMaxRows": 6,
-        "galleryDisplayMoreStep": 2,
+        "galleryDisplayMoreStep": 3,
         "galleryPaginationMode": "dots",
         "thumbnailAlignment": "center",
         "galleryMaxItems": 70,

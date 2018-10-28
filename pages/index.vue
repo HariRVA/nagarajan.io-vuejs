@@ -7,7 +7,7 @@
     </section>
 
 
-    <section id="posts">
+<!--    <section id="posts">
       <div class="sectionTitle">
         <h1>
           My latest thoughts
@@ -23,9 +23,7 @@
           :thumb="Post.thumb"
         />
       </div>
-
-
-    </section>
+    </section>-->
 
     <section id="projects">
       <div class="sectionTitle">
@@ -80,16 +78,14 @@
     Photos,
     TheTopAlt,
     Social,
-    Copyright,
-    Posts
-
+    Copyright
   },
     async asyncData({ app }) {
-      const Posts = await app.$axios.$get('https://iuedqpqpla.execute-api.us-east-1.amazonaws.com/default/getBlogPots');
+      //const Posts = await app.$axios.$get('https://iuedqpqpla.execute-api.us-east-1.amazonaws.com/default/getBlogPots');
       const Experience = await app.$axios.$get('https://bykv699qcf.execute-api.us-east-1.amazonaws.com/default/get_experience');
 
 
-      return { Posts,Experience }
+      return { Experience }
     },
 
   data() {
