@@ -1,6 +1,6 @@
 # nagarajan-io
 
-> Nuxt.js project
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0e960ee4-2716-415d-a9ae-7bec25ac97fc/deploy-status)](https://app.netlify.com/sites/epic-cray-592178/deploys)
 
 ## Build Setup
 
