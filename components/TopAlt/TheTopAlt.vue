@@ -8,12 +8,9 @@
             </h1>
           <h2>I craft software solutions for business problems.</h2>
           <p>
-            I'm a Software Engineer from Richmond, VA. As of 2016, I've been programing for 50% of my life. My non programing
-            hobbies include electric skateboarding, cooking, video games, and mobile photography. Some of my lofty personal goals
-            are to build a DIY electric skateboard with a full data collection and analysis architecture, setting up a natural
-            language processor to screen my emails and text messages and to automate as many mundane household tasks as possible
-            using NFC tags. My current professional focus is on server-less cloud architecture and the JAMStack.
-
+            I'm a Software Engineer from Richmond, VA with a passion for DIY and automation. I currently work at Capital One in the
+            Open Source department. So I'm a big advocate for Open Source. I build and maintain many JAMStack websites for various 
+            bloggers, including my own blog: <a href="https://www.asyncbits.com"> www.asyncbits.com </a>. 
           </p>
 
         </div>
