@@ -9,8 +9,8 @@
           <h2>I craft software solutions for business problems.</h2>
           <p>
             I'm a Software Engineer from Richmond, VA with a passion for DIY and automation. I currently work at Capital One in the
-            Open Source department. So I'm a big advocate for Open Source. I build and maintain many JAMStack websites for various 
-            bloggers, including my own blog: <a href="https://www.asyncbits.com"> www.asyncbits.com </a>. 
+            Open Source department. So I'm a big advocate for Open Source. Right now, my stack of choice starts on AWS with Go/Python back ends
+            and VueJS front ends. I'm also a huge fan of JAMStack, this site is built with Nuxt.js and my blog is built with Gatsby. 
           </p>
 
         </div>
