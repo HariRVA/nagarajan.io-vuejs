@@ -25,38 +25,7 @@
       </div>
     </section>-->
 
-    <section id="projects">
-      <div class="sectionTitle">
-        <h1>
-          My Work Profile
-        </h1>
-      </div>
-      <Experiences
-        v-for="job in Experience"
-        :key="job.id"
-        :CompanyName="job.Company"
-        :JobTitle="job.JobTitle"
-        :previewText="job.About"
-        :thumbnailUrl="job.thumbnailUrl"
-        :id="job.id"
-      />
-    </section>
 
-    <section id="photos">
-      <div class="sectionTitle">
-        <h1>
-          Some cool photos
-        </h1>
-      </div>
-      <p>
-        The best camera is the one you have with you. I'm a huge fan of mobile photography and I take tons of pictures. Right now my
-        phone camera of choice is the Google Pixel 2. Some other phones I've used here are: iPhone 8+, Samsung Galaxy S9, Essential PH-1 and
-        Google Pixel. My favorite subjects include beautiful Richmond landscapes, food, cats, and my family and friends.
-      </p>
-      <div id="gallery">
-      <Photos/>
-      </div>
-    </section>
 
     <section id="footer">
       <Copyright />
