@@ -6,17 +6,15 @@
             <h1 class="name">
               Hi, I'm <span class="highlight">Hari</span>
             </h1>
-          <h2>I craft software solutions for business problems.</h2>
-          <p>
-            I'm a Software Engineer from Richmond, VA with a passion for DIY and automation. I currently work at Capital One in the
-            Open Source department. So I'm a big advocate for Open Source. Right now, my stack of choice starts on AWS with Go/Python back ends
-            and VueJS front ends. I'm also a huge fan of JAMStack, this site is built with Nuxt.js and my blog is built with Gatsby. 
-          </p>
-
+            <p>
+              I'm a Software Engineer from Richmond, VA that likes to build things.
+            </p>
         </div>
 
         <div class="photoCol">
-          <img src="~/assets/images/bridgePhoto.jpg">
+          <img src="~/assets/images/bridgePhoto-large.jpg"
+               srcset="~/assets/images/bridgePhoto-small.jpg 270w,~/assets/images/bridgePhoto-large.jpg 540w"
+               alt="photo of Hari">
         </div>
       </div>
     </div>
@@ -113,7 +111,7 @@
     -webkit-transform: rotate(15deg);
     -ms-transform: rotate(15deg);
     transform: rotate(15deg);
-    background-image: url("~/assets/images/bridgePhoto.jpg");
+    background-image: url("~/assets/images/bridgePhoto-small.jpg");
     background-size: cover;
     border: 4px double #E77470;
     opacity: 0.4;
@@ -131,7 +129,7 @@
     -webkit-transform: rotate(-3deg);
     -ms-transform: rotate(-3deg);
     transform: rotate(-3deg);
-    background-image: url("~/assets/images/bridgePhoto.jpg");
+    background-image: url("~/assets/images/bridgePhoto-small.jpg");
     border: 4px double #E77470;
     background-size: cover;
     opacity: 0.4;

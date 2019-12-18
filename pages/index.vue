@@ -2,9 +2,9 @@
   <div id="container">
     <TheTopAlt />
 
-    <section id="social">
+<!--    <section id="social">
       <Social/>
-    </section>
+    </section>-->
 
 
 <!--    <section id="posts">
@@ -49,14 +49,6 @@
     Social,
     Copyright
   },
-    async asyncData({ app }) {
-      //const Posts = await app.$axios.$get('https://iuedqpqpla.execute-api.us-east-1.amazonaws.com/default/getBlogPots');
-      const Experience = await app.$axios.$get('https://bykv699qcf.execute-api.us-east-1.amazonaws.com/default/get_experience');
-
-
-      return { Experience }
-    },
-
   data() {
     return {
     };
