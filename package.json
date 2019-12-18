@@ -13,13 +13,17 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@bazzite/nuxt-optimized-images": "^0.2.2",
     "@nuxtjs/axios": "^5.3.1",
     "add": "^2.0.6",
     "ajv": "^6.5.3",
+    "imagemin-mozjpeg": "^8.0.0",
     "nanogallery2": "^2.2.0",
     "nuxt": "^1.0.0",
+    "url-loader": "^3.0.0",
     "vue-burger-menu": "^1.0.0",
     "vue-fixed-header": "^1.0.4",
+    "webp-loader": "^0.6.0",
     "yarn": "^1.9.4"
   },
   "devDependencies": {
