@@ -1,8 +1,15 @@
 
 module.exports = {
   modules: [
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@bazzite/nuxt-optimized-images'
   ],
+  optimizedImages: {
+    optimizeImages: true,
+    optimizeImagesInDev: true,
+    inlineImageLimit: -1,
+  },
+
 
   /*
   ** Headers of the page
@@ -21,11 +28,7 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: '/fonts.css'},
       { rel: 'stylesheet', type: 'text/css', href: '/nanogallery2.min.css'}
-      ],
-    script: [
-      { src: '/jquery.min.js'},
-      { src: '/jquery.nanogallery2.min.js'}
-    ]
+      ]
   },
   /*
   ** Customize the progress bar color
@@ -50,4 +53,3 @@ module.exports = {
     }
   }
 }
-

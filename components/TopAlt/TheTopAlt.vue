@@ -12,9 +12,11 @@
         </div>
 
         <div class="photoCol">
-          <img src="~/assets/images/bridgePhoto-large.jpg"
-               srcset="~/assets/images/bridgePhoto-small.jpg 270w,~/assets/images/bridgePhoto-large.jpg 540w"
-               alt="photo of Hari">
+          <picture>
+            <source :srcset="require('~/assets/images/bridgePhoto.JPEG?webp')" type="image/webp" />
+            <source :srcset="require('~/assets/images/bridgePhoto.JPEG')" type="image/jpeg" />
+            <img :src="require('~/assets/images/bridgePhoto.JPEG')" alt="photo of Hari"/>
+          </picture>
         </div>
       </div>
     </div>
@@ -111,7 +113,7 @@
     -webkit-transform: rotate(15deg);
     -ms-transform: rotate(15deg);
     transform: rotate(15deg);
-    background-image: url("~/assets/images/bridgePhoto-small.jpg");
+    background-image: url("~/assets/images/bridgePhoto.JPEG");
     background-size: cover;
     border: 4px double #E77470;
     opacity: 0.4;
@@ -129,7 +131,7 @@
     -webkit-transform: rotate(-3deg);
     -ms-transform: rotate(-3deg);
     transform: rotate(-3deg);
-    background-image: url("~/assets/images/bridgePhoto-small.jpg");
+    background-image: url("~/assets/images/bridgePhoto.JPEG");
     border: 4px double #E77470;
     background-size: cover;
     opacity: 0.4;
