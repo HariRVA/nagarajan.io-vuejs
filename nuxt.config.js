@@ -9,6 +9,9 @@ module.exports = {
   */
   head: {
     title: 'Hari\'s Website',
+    htmlAttrs: {
+      lang: 'en',
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1' },
