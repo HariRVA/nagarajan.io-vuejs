@@ -27,7 +27,7 @@
             projectName: "Twitter AI",
             repoURL: "https://github.com/Hari-Nagarajan/gpt2-twitter",
             projectDescription: "I like Twitter, but I never actually tweet anything, so I figured why not use Machine Learning to tweet for me." +
-              "I used the GPT-2 Model from OpenAI as a base and then tuned it with content from some of the users I follow. Now I have a bot periodically" +
+              "I used the GPT-2 Model from OpenAI as a base and then tuned it with content from some of the users I follow. Now I have a bot periodically " +
               "generating content to post and I am now active on Twitter. Follow me for occasionally high quality content."
           }
         ]
