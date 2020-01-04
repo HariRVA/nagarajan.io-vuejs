@@ -1,5 +1,5 @@
 <template>
-  <footer id = "footer">
+  <footer id="footer">
     <div>
       <p>
         Copyright ©2018 All Rights Reserved - Hari Nagarajan
@@ -9,13 +9,18 @@
 </template>
 
 <style scoped>
-  #footer{
+  #footer {
     background-color: darkblue;
     color: ghostwhite;
     flex-shrink: 0;
     width: 100%;
     text-align: center;
+  }
 
+  @media (max-width: 440px) {
+    #footer {
+      font-size: 10px
+    }
   }
 
 </style>

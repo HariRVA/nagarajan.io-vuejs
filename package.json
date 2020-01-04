@@ -18,6 +18,7 @@
     "add": "^2.0.6",
     "ajv": "^6.5.3",
     "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^8.0.0",
     "nanogallery2": "^2.2.0",
     "nuxt": "^1.0.0",
     "url-loader": "^3.0.0",

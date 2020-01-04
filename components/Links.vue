@@ -1,21 +1,20 @@
 <template>
 
-    <div id="links">
+  <div id="links">
 
-      <div
-        :style="{backgroundImage: 'url(' + thumbnailUrl + ')'}"
-        class="post-preview-thumbnail">
-      </div>
-      <div class="post-preview-content">
-        <h3>{{ CompanyName }}</h3>
-        <h6> {{ JobTitle }}</h6>
-        <p>{{ previewText }}</p>
-      </div>
-
+    <div
+      :style="{backgroundImage: 'url(' + thumbnailUrl + ')'}"
+      class="post-preview-thumbnail">
+    </div>
+    <div class="post-preview-content">
+      <h3>{{ CompanyName }}</h3>
+      <h6> {{ JobTitle }}</h6>
+      <p>{{ previewText }}</p>
     </div>
 
-</template>
+  </div>
 
+</template>
 
 
 <style scoped>
@@ -45,7 +44,7 @@
     margin-left: 1rem;
     margin-right: 1rem;
     margin-top: 1rem;
-    box-shadow: 1px 1px 5px 1px rgba(0,0,0,5);
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 5);
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -55,16 +54,17 @@
 
   }
 
-  .post-preview-thumbnail:before{
+  .post-preview-thumbnail:before {
     display: block;
     padding-top: 100%;
   }
 
 
-  .spacer{
+  .spacer {
     padding-top: 12rem;
   }
-  .post-preview-content{
+
+  .post-preview-content {
     width: 100%;
     margin-left: 1rem;
     margin-top: 2rem;
@@ -79,6 +79,7 @@
     margin: 0px;
     margin-bottom: 5px;
   }
+
   .post-preview-content h6 {
     font-size: 15px;
     font-weight: 700;
@@ -115,7 +116,7 @@
       margin-top: 0.5rem;
     }
 
-    .post-preview-content{
+    .post-preview-content {
       margin-left: 0rem;
       margin-top: 0.5rem;
       max-width: 95%;

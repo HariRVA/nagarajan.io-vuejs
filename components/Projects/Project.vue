@@ -1,17 +1,25 @@
 <template>
   <div class="project">
-    <div class="post-preview-content">
+    <div class="title">
+      <a :href=repoURL>
+        <picture>
+          <source :srcset="require('~/assets/icons/github.PNG?webp')" type="image/webp"/>
+          <source :srcset="require('~/assets/icons/github.PNG')" type="image/png"/>
+          <img :src="require('~/assets/icons/github.PNG')" alt="photo of Hari"/>
+        </picture>
+      </a>
       <h3>{{ projectName }}</h3>
-      <a :href=linkURL>{{linkText}}</a>
-      <p>{{ projectDescription }}</p>
+
     </div>
+
+    <p>{{ projectDescription }}</p>
   </div>
 
 
 </template>
 
 <script>
-  export default{
+  export default {
     props: {
       projectName: {
         type: String,
@@ -21,11 +29,7 @@
         type: String,
         required: true
       },
-      linkURL: {
-        type: String,
-        required: true
-      },
-      linkText: {
+      repoURL: {
         type: String,
         required: true
       },
@@ -40,25 +44,39 @@
 </script>
 
 <style scoped>
- .project{
-   max-width: 300px;
-   box-shadow: 0 10px 10px 5px rgba(0,0,0,0.2);
-   background-color: rgba(2,136,209,.2);
-   margin: 1em;
-   padding: 1em;
- }
+  .project {
+    max-width: 300px;
+    box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.2);
+    background-color: rgba(218, 85, 38, .2);
+    margin: 1em;
+    padding: 1em;
+    color: ghostwhite;
+  }
 
- /* On mouse-over, add a deeper shadow */
- .project:hover {
-   box-shadow: 0 20px 20px 10px rgba(0,0,0,0.2);
- }
+  .title {
+    display: flex;
+    flex-direction: row;
+  }
 
- @media (max-width: 440px){
-   .project{
-     max-width: 90%;
-     margin-right: auto;
-     margin-left: auto;
-     margin-top: 0.5em;
-   }
- }
+  h3 {
+    margin-left: 1em;
+  }
+
+  a img {
+    height: 50px;
+  }
+
+  /* On mouse-over, add a deeper shadow */
+  .project:hover {
+    box-shadow: 0 20px 20px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 440px) {
+    .project {
+      max-width: 90%;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 0.5em;
+    }
+  }
 </style>
