@@ -12,3 +12,6 @@ dist
 
 # AWS Stuff
 policy.json
+/.idea/
+/yarn.lock
+/yarn-error.log
