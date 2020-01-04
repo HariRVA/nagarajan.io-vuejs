@@ -1,16 +1,75 @@
 <template>
-    <main>
-      <div id="main">
-        <nuxt/>
-      </div>
-    </main>
+  <div id="main">
+    <nuxt id="container"/>
+    <Copyright />
+  </div>
+
 </template>
 
 <script>
-
+  import Copyright from '@/components/Copyright'
+  import Intro from '@/components/Intro'
+  export default {
+    components:{
+      Copyright,
+      Intro
+    },
+    data() {
+      return {
+      };
+    }
+  };
 </script>
-
 <style>
+
+  #main {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    max-height: 100vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #container{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    flex: 1 0 auto;
+  }
+  html {
+    font-family: "Open Sans", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    word-spacing: 1px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    height: 100%;
+    min-height: 100%;
+  }
+
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    background-image: url("~/assets/images/bg.JPEG");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    display: flex;
+    flex-direction: column;
+
+  }
+
   /* latin-ext */
   @font-face {
     font-family: 'Open Sans';
@@ -92,40 +151,5 @@
     font-display: swap;
   }
 
-  html {
-    font-family: "Open Sans", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 16px;
-    word-spacing: 1px;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    box-sizing: border-box;
-    height: 100%;
-    min-height: 100%;
-}
-
-  body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    min-height: 100%;
-    background-image: url("~/assets/images/bg.JPEG");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-  }
-
-  #main{
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    justify-self: center;
-    display: block;
-  }
 </style>
 

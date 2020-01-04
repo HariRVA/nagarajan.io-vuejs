@@ -1,0 +1,60 @@
+<template>
+  <div id="projects">
+    <Project   v-for="project in projects"
+               v-bind:key="project.id"
+               v-bind:projectName="project.projectName"
+               v-bind:linkURL="project.linkURL"
+               v-bind:linkText="project.linkText"
+               v-bind:projectDescription="project.projectDescription"
+
+    />
+
+  </div>
+
+</template>
+
+<script>
+  import Project from '@/components/Projects/Project'
+  export default {
+    components:{
+      Project
+      },
+    data: function() {
+return {
+      projects: [
+        {
+          id: 1,
+          projectName: "Twitter AI",
+          linkURL: "https://github.com/Hari-Nagarajan/gpt2-twitter",
+          linkText: "Source Code on GitHub",
+          projectDescription: "I like Twitter, but I never actually tweet anything, so I figured why not use Machine Learning to tweet for me." +
+            "I used the GPT-2 Model from OpenAI as a base and then tuned it with content from some of the users I follow. Now I have a bot periodically" +
+            "generating content to post and I am now active on Twitter. Follow me for occasionally high quality content."
+        }
+      ]
+    };
+},
+        name: "Projects"
+    }
+</script>
+
+<style scoped>
+  #projects{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+  @media (max-width: 440px){
+    #projects{
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+    }
+  }
+</style>

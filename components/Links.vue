@@ -1,6 +1,6 @@
 <template>
 
-    <article class="post-preview">
+    <div id="links">
 
       <div
         :style="{backgroundImage: 'url(' + thumbnailUrl + ')'}"
@@ -12,40 +12,14 @@
         <p>{{ previewText }}</p>
       </div>
 
-    </article>
+    </div>
 
 </template>
 
-<script>
-  export default{
-    props: {
-      CompanyName: {
-        type: String,
-        required: true
-      },
-      JobTitle: {
-        type: String,
-        required: true
-      },
-      previewText: {
-        type: String,
-        required: true
-      },
-      thumbnailUrl: {
-        type: String,
-        required: true
-      },
-      id: {
-        type: Number,
-        required: false
-      }
 
-    }
-  }
-
-</script>
 
 <style scoped>
+
   a {
     text-decoration: none;
     color: black;
